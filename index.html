@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Produtora Play | Portfólio de Voz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --verde: #00ff6a;
+      --fundo: #0b0b0b;
+      --card: #141414;
+      --texto: #ffffff;
+      --muted: #b3b3b3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: radial-gradient(circle at top, #0f1f16, #050505);
+      color: var(--texto);
+    }
+
+    header {
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 12px rgba(0,255,100,.6));
+    }
+
+    header h1 {
+      margin: 10px 0 6px;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      margin-top: 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      background: linear-gradient(135deg, #00ff6a, #00cc55);
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      box-shadow: 0 0 18px rgba(0,255,100,.5);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 0 26px rgba(0,255,100,.8);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      font-size: 1.7rem;
+      margin-bottom: 25px;
+      text-align: center;
+      color: var(--verde);
+      letter-spacing: .5px;
+    }
+
+    .demos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .demo-card {
+      background: linear-gradient(180deg, #141414, #0d0d0d);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 0 0 1px rgba(0,255,100,.12),
+                  0 10px 30px rgba(0,0,0,.6);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .demo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 0 1px rgba(0,255,100,.35),
+                  0 16px 40px rgba(0,0,0,.8);
+    }
+
+    .demo-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.15rem;
+      color: #eafff4;
+      letter-spacing: .3px;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    .sobre {
+      text-align: center;
+      max-width: 720px;
+      margin: auto;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .contato {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .contato-card {
+      background: linear-gradient(180deg, #141414, #0c0c0c);
+      border-radius: 16px;
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 0 0 1px rgba(0,255,100,.12),
+                  0 8px 26px rgba(0,0,0,.6);
+    }
+
+    .contato-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--verde);
+      font-size: 1.05rem;
+      letter-spacing: .3px;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      font-size: .9rem;
+      color: #888;
+      border-top: 1px solid rgba(0,255,100,.12);
+    }
+
+    /* Mobile refinado */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 40px 16px;
+      }
+      .demo-card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Substitua src pela sua logo -->
+  <img src="logo-play.png" alt="Produtora Play Logo">
+  <h1>Produtora Play</h1>
+  <p>Áudio • Vídeo • Designer — A marca da sua produção</p>
+  <a class="cta" href="https://wa.me/559182097833" target="_blank">?? Falar no WhatsApp</a>
+</header>
+
+<section>
+  <h2>?? Demos de Voz</h2>
+  <div class="demos">
+
+    <div class="demo-card">
+      <h3>Comercial</h3>
+      <audio controls>
+        <source src="demo-comercial.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="demo-card">
+      <h3>Narrativo</h3>
+      <audio controls>
+        <source src="demo-narrativo.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="demo-card">
+      <h3>Institucional</h3>
+      <audio controls>
+        <source src="demo-institucional.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="demo-card">
+      <h3>Emocional</h3>
+      <audio controls>
+        <source src="demo-emocional.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>??? Sobre</h2>
+  <div class="sobre">
+    A <strong>Produtora Play</strong> oferece locução profissional, narração,
+    comerciais, vídeos institucionais e conteúdo digital com qualidade de estúdio,
+    entrega rápida e atendimento personalizado.
+  </div>
+</section>
+
+<section>
+  <h2>?? Contato</h2>
+  <div class="contato">
+    <div class="contato-card">
+      <strong>WhatsApp</strong>
+      (91) 9 8209-7833
+    </div>
+    <div class="contato-card">
+      <strong>Email</strong>
+      contato@produtoraplay.com
+    </div>
+    <div class="contato-card">
+      <strong>Instagram</strong>
+      @produtoraplay
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 • Produtora Play — A marca da sua produção
+</footer>
+
+</body>
+</html>
